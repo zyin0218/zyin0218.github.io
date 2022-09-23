@@ -50,6 +50,12 @@ body .no_landscape {
     max-width: 400px;
   }
 }
+@media screen and (orientation: landscape) and (max-width: 1023px) and (max-width: 767px) {
+  body .no_landscape .product_img img {
+    width: 100%;
+    max-width: 290px;
+  }
+}
 @media screen and (orientation: landscape) and (max-width: 1023px) and (max-width: 375px) {
   body .no_landscape .product_img img {
     margin-bottom: 1rem;
@@ -312,12 +318,14 @@ header ul li ul {
   #entrance .entrance_box {
     position: absolute;
     bottom: 11vh;
+    width: calc(100% - 2rem);
   }
 }
 @media screen and (max-width: 375px) {
   #entrance .entrance_box {
     position: absolute;
-    bottom: 11vh;
+    bottom: 13vh;
+    width: calc(100% - 1rem) !important;
   }
 }
 #entrance .slogan_img img, #entrance .product_img img {
@@ -356,9 +364,10 @@ header ul li ul {
     max-width: 400px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   #entrance .product_img img {
     margin-bottom: 1rem;
+    max-width: 300px;
   }
 }
 #entrance .function_img {

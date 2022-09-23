@@ -37,6 +37,9 @@ body
         max-width: 465px
         @media screen and (min-width: 768px) and (max-width: 1024px)
           max-width: 400px
+        @media screen and (max-width: 767px)
+          width: 100%
+          max-width: 290px 
         @media screen and (max-width: 375px)
           margin-bottom: 1rem
       .notice
@@ -219,10 +222,12 @@ header
     .entrance_box
       position: absolute
       bottom: 11vh
+      width: calc(100% - 1rem * 2)
   @media screen and (max-width: 375px)
     .entrance_box
       position: absolute
-      bottom: 11vh
+      bottom: 13vh
+      width: calc(100% - 1rem) !important
   .slogan_img, .product_img
     img
       width: 100%
@@ -243,8 +248,9 @@ header
       max-width: 465px
       @media screen and (min-width: 768px) and (max-width: 1024px)
         max-width: 400px
-      @media screen and (max-width: 375px)
+      @media screen and (max-width: 767px)
         margin-bottom: 1rem
+        max-width: 300px
   .function_img
     margin-top: 3rem
     display: flex
