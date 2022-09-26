@@ -312,6 +312,7 @@ header ul li ul {
 @media screen and (max-width: 820px) {
   #entrance {
     background-image: url(../images/heroimage_index_m@2x.jpg);
+    background-position: center bottom;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 767px) {
@@ -356,6 +357,12 @@ header ul li ul {
     text-align: right;
   }
 }
+@media screen and (max-width: 767px) {
+  #entrance .product_img {
+    position: absolute;
+    bottom: 0;
+  }
+}
 #entrance .product_img img {
   max-width: 465px;
 }
@@ -366,7 +373,6 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #entrance .product_img img {
-    margin-bottom: 1rem;
     max-width: 300px;
   }
 }
@@ -438,7 +444,8 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #function3 {
-    background-position: 85% 50%;
+    background-image: url(../images/bg_3_m@2x.jpg);
+    background-position: center bottom;
   }
 }
 
@@ -876,10 +883,13 @@ header ul li ul {
 }
 .title_outer .content {
   font-size: 1.375rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   color: #000;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
   text-align: justify;
+  width: 86%;
+  padding-top: 2rem;
+  border-top: 4px solid #BE2121;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .title_outer .content {
@@ -915,7 +925,7 @@ header ul li ul {
   background: linear-gradient(360deg, #040000 0%, #565656 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 55px;
-  margin: 1rem;
+  margin: 0.5rem 1rem 1rem;
   display: flex;
   flex-direction: row;
   -moz-column-gap: 0.5rem;
@@ -1048,12 +1058,15 @@ header ul li ul {
 }
 
 ul.list_no_style {
-  padding-left: 0.8rem;
+  padding-left: 0rem;
 }
 ul.list_no_style li {
   list-style-type: none;
 }
 
+ul.list_number {
+  padding-left: 1.2rem;
+}
 ul.list_number li {
   list-style-type: decimal;
 }/*# sourceMappingURL=main.css.map */
