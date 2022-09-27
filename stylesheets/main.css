@@ -53,7 +53,7 @@ body .no_landscape {
 @media screen and (orientation: landscape) and (max-width: 1023px) and (max-width: 767px) {
   body .no_landscape .product_img img {
     width: 100%;
-    max-width: 100%;
+    max-width: 290px;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 1023px) and (max-width: 375px) {
@@ -373,7 +373,7 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #entrance .product_img img {
-    max-width: 300px;
+    max-width: 100%;
   }
 }
 #entrance .function_img {
