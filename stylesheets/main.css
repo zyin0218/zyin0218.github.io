@@ -373,7 +373,7 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #entrance .product_img img {
-    max-width: 100%;
+    max-width: calc(100% - 1rem);
   }
 }
 #entrance .function_img {
