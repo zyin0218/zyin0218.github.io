@@ -2,7 +2,7 @@
 body {
   background-size: cover;
   background-position: center center;
-  font-family: "Noto Sans TC", "微軟正黑體", sans-serif, serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -900,6 +900,7 @@ header ul li ul {
   .title_outer .content {
     font-size: 0.875rem;
     margin: 0;
+    width: 100%;
   }
 }
 
@@ -1072,7 +1073,7 @@ ul.list_number li {
 }
 
 ul.list_dots {
-  padding-left: 1rem;
+  padding-left: 1.3rem;
 }
 ul.list_dots li {
   list-style-type: disc;
