@@ -320,6 +320,7 @@ header ul li ul {
     position: absolute;
     bottom: 11vh;
     width: calc(100% - 2rem);
+    left: 1rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -373,7 +374,7 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #entrance .product_img img {
-    max-width: calc(100% - 1rem);
+    max-width: calc(100% - 2rem);
   }
 }
 #entrance .function_img {
