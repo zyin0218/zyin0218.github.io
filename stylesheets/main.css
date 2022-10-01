@@ -1020,7 +1020,7 @@ header ul li ul {
   bottom: 15px;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 .mobile_menu_outer ul {
   background: linear-gradient(360deg, #040000 0%, #565656 100%);
