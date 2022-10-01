@@ -34,7 +34,7 @@ $(document).ready(function(){
 		menu: '#menu',
 		navigation: true,
 		navigationPosition: 'right',
-		anchors: ['firstPage', 'secondPage', '3Page', '4Page', '5Page', '6Page', '7Page'],
+		anchors: ['firstPage', 'secondPage', '3Page', '4Page', '5Page', '6Page'],
 		// navigationTooltips: ['首頁', 'Easy省', 'Easy裝', 'Easy煮', '神隊友', '音樂下載'],
 		showActiveTooltip: true,
 		fadingEffect:true,
@@ -54,21 +54,21 @@ $(document).ready(function(){
       //當一離開index，首頁物件動畫
       if((direction == 'down' && origin.index == 0 )) {
         console.log('onLeave');
-				$('#entrance .slogan_img.animated').removeClass('flash').addClass('fadeOut');
-				$('#entrance .function_img > div').removeClass('fadeInUp').addClass('fadeOut');
+				// $('#entrance .slogan_img.animated').removeClass('flash').addClass('fadeOut');
+				// $('#entrance .function_img > div').removeClass('fadeInUp').addClass('fadeOut');
     	}
 			//當一離開index，首頁物件動畫
 			if((destination.index == 1)) {
 				console.log('onLeave');
-				$('#function1 .title_outer.animated').addClass('fadeInUp');
+				// $('#function1 .title_outer.animated').addClass('fadeInUp');
 	 		}
 			if((destination.index == 2)) {
 				console.log('onLeave');
-				$('#function2 .title_outer.animated').addClass('fadeInUp');
+				// $('#function2 .title_outer.animated').addClass('fadeInUp');
 	 		}
 			 if((destination.index == 3)) {
 				console.log('onLeave');
-				$('#function3 .title_outer.animated').addClass('fadeInUp');
+				// $('#function3 .title_outer.animated').addClass('fadeInUp');
 	 		}
 			if((destination.index == 4)) {
 				// modal影片設定 - 收起時影片自動結束
@@ -86,8 +86,8 @@ $(document).ready(function(){
 			var leavingSection = this;
 			//當從任何頁面回到index0時的動畫
       if((direction == 'up' && destination.index == 0)){
-				$('#entrance .slogan_img.animated').addClass('flash').removeClass('fadeOut');
-				$('#entrance .function_img > div').addClass('fadeInUp').removeClass('fadeOut');
+				// $('#entrance .slogan_img.animated').addClass('flash').removeClass('fadeOut');
+				// $('#entrance .function_img > div').addClass('fadeInUp').removeClass('fadeOut');
       }
 		}
 	});
