@@ -688,6 +688,8 @@ header ul li ul {
 @media screen and (orientation: portrait) and (max-height: 630px) {
   #function5 .download_box {
     flex-direction: row;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 #function5 .download_box .android, #function5 .download_box .ios {
