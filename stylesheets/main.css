@@ -464,7 +464,7 @@ header ul li ul {
   background-repeat: no-repeat;
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   #function3 {
     background-image: url(../images/bg_3_m@2x.jpg);
     background-position: center bottom;
@@ -486,6 +486,17 @@ header ul li ul {
   background-repeat: no-repeat;
   width: 100%;
 }
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+  #function5 {
+    background-position: center right;
+  }
+}
+@media screen and (max-width: 767px) {
+  #function5 {
+    background-position: center right;
+  }
+}
+
 #function1 {
   position: relative;
 }
@@ -674,6 +685,11 @@ header ul li ul {
     flex-direction: column;
   }
 }
+@media screen and (orientation: portrait) and (max-height: 630px) {
+  #function5 .download_box {
+    flex-direction: row;
+  }
+}
 #function5 .download_box .android, #function5 .download_box .ios {
   max-width: 274px;
   height: auto;
@@ -702,6 +718,11 @@ header ul li ul {
     width: 100% !important;
   }
 }
+@media screen and (max-width: 767px) {
+  #function5 .download_outer {
+    margin-top: -7rem;
+  }
+}
 #function5 .download_outer p {
   color: #9E0000;
   margin-bottom: 1rem;
@@ -709,8 +730,20 @@ header ul li ul {
   text-align: center;
 }
 
+#qa_wrapper {
+  background-image: url(../images/qa_bg@2x.jpg) !important;
+  background-position: left top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .qa_outer {
   margin-top: calc(115px + 6rem);
+}
+@media screen and (max-width: 767px) {
+  .qa_outer {
+    margin-top: 90px;
+  }
 }
 .qa_outer .title {
   font-size: 1.875rem;
@@ -754,12 +787,14 @@ header ul li ul {
   height: 35px;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 2;
 }
 .qa_outer #qa .accordion-button:not(.collapsed)::after {
   background-image: url(../images/line_right@2x.png) !important;
   opacity: 0.5;
   filter: grayscale(0);
   transform: rotate(0deg);
+  z-index: -1;
 }
 .qa_outer #qa .accordion-button::after {
   background-image: url(../images/line_right@2x.png) !important;
@@ -773,6 +808,7 @@ header ul li ul {
   opacity: 0.5;
   filter: grayscale(0);
   transform: rotate(0deg);
+  z-index: -1;
 }
 .qa_outer #qa .accordion-button::before {
   background-image: url(../images/line_left@2x.png) !important;
@@ -838,6 +874,11 @@ header ul li ul {
     padding: 1rem 0 13vh;
   }
 }
+@media screen and (orientation: portrait) and (max-height: 630px) {
+  #footer .footer_outer, #footer_qa .footer_outer {
+    padding: 1rem 0 16vh;
+  }
+}
 #footer .footer_outer .footer_wrap, #footer_qa .footer_outer .footer_wrap {
   display: flex;
   justify-content: space-between;
@@ -890,7 +931,7 @@ header ul li ul {
   }
 }
 #footer .footer_outer .footer_wrap .phone span, #footer_qa .footer_outer .footer_wrap .phone span {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 767px) {
   #footer .footer_outer .footer_wrap .phone span, #footer_qa .footer_outer .footer_wrap .phone span {
@@ -979,6 +1020,7 @@ header ul li ul {
   bottom: 15px;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
 .mobile_menu_outer ul {
   background: linear-gradient(360deg, #040000 0%, #565656 100%);
@@ -1132,6 +1174,11 @@ ul.list_number li {
 
 ul.list_dots {
   padding-left: 1.3rem;
+}
+@media screen and (max-width: 767px) {
+  ul.list_dots {
+    padding-left: 1rem;
+  }
 }
 ul.list_dots li {
   list-style-type: disc;
