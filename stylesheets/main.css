@@ -1045,8 +1045,8 @@ header ul li ul {
   height: auto;
   margin-bottom: 0.2rem;
 }
-.mobile_menu_outer ul li a.active {
-  color: #fff;
+.mobile_menu_outer ul li a.active, .mobile_menu_outer ul li a:hover, .mobile_menu_outer ul li a:active, .mobile_menu_outer ul li a:focus {
+  color: #fff !important;
   text-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
