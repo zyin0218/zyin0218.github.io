@@ -317,7 +317,7 @@ header ul li ul {
 @media screen and (max-width: 820px) {
   #entrance {
     background-image: url(../images/heroimage_index_m@2x.jpg);
-    background-position: center bottom;
+    background-position: center 50%;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 767px) {
@@ -359,8 +359,10 @@ header ul li ul {
 }
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
   #entrance .product_img {
-    padding-bottom: 25rem;
-    text-align: right;
+    position: absolute;
+    bottom: 2vh;
+    left: 1rem;
+    width: calc(100% - 2rem);
   }
 }
 @media screen and (max-width: 767px) {
@@ -383,7 +385,12 @@ header ul li ul {
 #entrance .product_img img {
   max-width: 465px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (orientation: portrait) and (max-width: 1024px) {
+  #entrance .product_img img {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #entrance .product_img img {
     max-width: 400px;
   }
@@ -485,6 +492,11 @@ header ul li ul {
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1365px) {
+  #function5 {
+    background-position: 40% center;
+  }
 }
 @media screen and (orientation: portrait) and (max-width: 1024px) {
   #function5 {
@@ -1184,4 +1196,8 @@ ul.list_dots {
 }
 ul.list_dots li {
   list-style-type: disc;
+}
+
+.title_bar {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
