@@ -585,7 +585,7 @@ header ul li ul {
 }
 @media screen and (max-width: 767px) {
   #function2 .product_img_box {
-    width: 80%;
+    width: 100%;
     margin: 1rem auto 0;
     text-align: center;
   }
@@ -732,23 +732,11 @@ header ul li ul {
     width: 100% !important;
   }
 }
-@media screen and (max-width: 767px) {
-  #function5 .download_outer {
-    margin-top: -7rem;
-  }
-}
 #function5 .download_outer p {
   color: #9E0000;
   margin-bottom: 1rem;
   font-weight: bold;
   text-align: center;
-}
-
-#qa_wrapper {
-  background-image: url(../images/qa_bg@2x.jpg) !important;
-  background-position: left top;
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .qa_outer {
@@ -850,12 +838,6 @@ header ul li ul {
   position: relative;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 #footer .man_xs, #footer_qa .man_xs {
   position: absolute;
   right: 2rem;
@@ -881,6 +863,7 @@ header ul li ul {
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
+  width: 100%;
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
@@ -1200,4 +1183,14 @@ ul.list_dots li {
 
 .title_bar {
   display: flex;
+}
+
+#function6 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../images/qa_bg@2x.jpg) !important;
+  background-position: left top;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

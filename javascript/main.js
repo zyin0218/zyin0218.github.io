@@ -34,7 +34,7 @@ $(document).ready(function(){
 		menu: '#menu',
 		navigation: true,
 		navigationPosition: 'right',
-		anchors: ['firstPage', 'secondPage', '3Page', '4Page', '5Page', '6Page'],
+		anchors: ['firstPage', 'secondPage', '3Page', '4Page', '5Page', '6Page', '7Page'],
 		// navigationTooltips: ['首頁', 'Easy省', 'Easy裝', 'Easy煮', '神隊友', '音樂下載'],
 		showActiveTooltip: true,
 		fadingEffect:true,
@@ -107,7 +107,7 @@ $(document).ready(function(){
 		fullpage_api.setAllowScrolling(true);
   });
 
-	$('.accordion').on('hidden.bs.collapse', function () {
+	$('.accordion').on('shown.bs.collapse', function () {
 		fullpage_api.reBuild();
 	});
 });

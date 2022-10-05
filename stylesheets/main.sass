@@ -380,7 +380,7 @@ header
       height: auto
   @media screen and (max-width: 767px)
     .product_img_box 
-      width: 80%
+      width: 100%
       margin: 1rem auto 0
       text-align: center
       img
@@ -473,18 +473,16 @@ header
   .download_outer
     @media screen and (orientation: portrait) and (max-width: 1024px)
       width: 100% !important
-    @media screen and (max-width: 767px)
-      margin-top: -7rem
     p
       color: $primary-dark
       margin-bottom: 1rem
       font-weight: bold
       text-align: center
 #qa_wrapper
-  background-image: url(../images/qa_bg@2x.jpg) !important
-  background-position: left top
-  background-size: 100%
-  background-repeat: no-repeat
+  // background-image: url(../images/qa_bg@2x.jpg) !important
+  // background-position: left top
+  // background-size: 100%
+  // background-repeat: no-repeat
 .qa_outer
   margin-top: calc(115px + 6rem)
   @media screen and (max-width: 767px)
@@ -556,9 +554,9 @@ header
 .position
   position: relative
 #footer 
-  position: absolute
-  bottom: 0
-  width: 100%
+  // position: absolute
+  // bottom: 0
+  // width: 100%
 #footer, #footer_qa
   .man_xs
     position: absolute
@@ -580,6 +578,7 @@ header
     background-repeat: no-repeat
     color: #fff
     position: relative
+    width: 100%
     z-index: 2
     @media screen and (max-width: 767px)
       padding: 1rem 0 13vh
@@ -801,3 +800,11 @@ ul.list_dots
     list-style-type: disc
 .title_bar
   display: flex
+#function6
+  width: 100%
+  min-height: 100vh
+  position: relative
+  background-image: url(../images/qa_bg@2x.jpg) !important
+  background-position: left top
+  background-size: 100%
+  background-repeat: no-repeat
