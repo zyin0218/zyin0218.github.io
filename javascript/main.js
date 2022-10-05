@@ -81,11 +81,14 @@ $(document).ready(function(){
 						target.find('.video').attr('src', url);
 				});
 			}
+			if((destination.index == 5 && direction == 'up')){
+				console.log('ssss');
+			}
     },
 		afterLoad: function(origin, destination, direction){
 			var leavingSection = this;
 			//當從任何頁面回到index0時的動畫
-      if((direction == 'up' && destination.index == 0)){
+      if((direction == 'down' && destination.index == 5)){
 				// $('#entrance .slogan_img.animated').addClass('flash').removeClass('fadeOut');
 				// $('#entrance .function_img > div').addClass('fadeInUp').removeClass('fadeOut');
       }
