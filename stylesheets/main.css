@@ -523,14 +523,14 @@ header ul li ul {
   background-repeat: no-repeat;
   width: 100%;
 }
-@media screen and (orientation: landscape) and (max-height: 740px) {
-  #function5 {
-    background-position: center 10%;
-  }
-}
 @media screen and (min-width: 1025px) and (max-width: 1365px) {
   #function5 {
     background-position: 40% center;
+  }
+}
+@media screen and (orientation: landscape) and (max-height: 970px) {
+  #function5 {
+    background-position: center 10%;
   }
 }
 @media screen and (orientation: portrait) and (max-width: 1024px) {
