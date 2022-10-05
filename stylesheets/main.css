@@ -353,7 +353,7 @@ header ul li ul {
 }
 @media screen and (orientation: landscape) and (max-height: 740px) {
   #entrance .slogan_img img {
-    max-width: 440px;
+    max-width: 390px;
   }
 }
 @media screen and (orientation: portrait) and (max-width: 1024px) {
@@ -373,7 +373,7 @@ header ul li ul {
 }
 @media screen and (orientation: landscape) and (max-height: 740px) {
   #entrance .product_img {
-    max-width: 440px;
+    max-width: 390px;
   }
 }
 @media screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
@@ -433,7 +433,7 @@ header ul li ul {
 }
 @media screen and (orientation: landscape) and (max-height: 740px) {
   #entrance .function_img {
-    max-width: 440px;
+    max-width: 390px;
     margin-top: 1.5rem;
   }
 }
