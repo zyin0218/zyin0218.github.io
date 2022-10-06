@@ -485,6 +485,11 @@ header ul li ul {
   background-repeat: no-repeat;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  #function1 {
+    background-image: url(../images/bg_m@2x.jpg);
+  }
+}
 
 #function2 {
   background-image: url(../images/bg_2@2x.jpg);
