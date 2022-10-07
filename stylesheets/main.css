@@ -1026,6 +1026,10 @@ header ul li ul {
   }
 }
 @media screen and (max-width: 767px) {
+  .title_outer #function1 {
+    position: relative;
+    z-index: 2;
+  }
   #function1 .title_outer, #function3 .title_outer {
     padding-right: 3rem;
     padding-bottom: 3rem;
