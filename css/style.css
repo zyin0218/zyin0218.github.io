@@ -727,7 +727,7 @@ header.mobile-header-2 .site-logo img {
   padding: 0;
 }
 .desktop-header-3 .nav-link.active {
-  color: #FFD15C !important;
+  color: #FF4C60 !important;
 }
 .desktop-header-3 .nav-link:hover {
   color: #FFD15C !important;
@@ -2439,3 +2439,18 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Customization */
+.img-radius {
+  border-radius: 50%;
+  max-width: 108px;
+  max-height: 108px;
+}
+.avatar-img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 14px;
+}
+.fs-6 {
+  font-size: .85rem;
+}
